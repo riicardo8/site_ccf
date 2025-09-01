@@ -1,0 +1,147 @@
+/* Reset Básico */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+    box-sizing: border-box; /* Inclui bordas e padding na largura e altura totais */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do Corpo */
+body {
+    font-family: "Roboto", sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    background-color: #ffffff; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+}   
+
+/* Estilos do Cabeçalho */
+header {
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: flex-start; /* Espaça itens igualmente */
+    gap: 30px; /* Espaçamento entre itens */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 10px 40px 10px 100px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+}
+
+/* Estilos do Logotipo */
+.logo {
+    max-width: 176px; /* Largura máxima do logotipo */
+    height: auto; /* Altura automática para manter a proporção */
+    display: block; /* Exibe como bloco */
+    margin-right: 40px; /* Empurra o logo para a direita */
+}   
+
+/* Estilos do Menu de Navegação */
+nav {
+    margin-top: 10px; /* Espaçamento acima do menu */
+    margin-left: 120px; /* Espaçamento à esquerda do menu */
+}
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+}
+nav ul li {
+    display: inline; /* Exibe itens em linha */
+    margin-right: 2px; /* Espaçamento entre itens */
+}
+nav ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #858585; /* Cor dos links */
+    font-weight: 100; /* Peso da fonte */
+    font-size: 14px; /* Tamanho da fonte */
+    border: none; /* Remove borda */
+    padding: 15px 20px; /* Espaçamento interno dos links */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: all 0.3s; /* Transição suave para efeitos */
+}
+nav ul li a:hover {
+    box-shadow: 0px 0px 10px #ffc800b6; /* Sombra ao passar o mouse */
+}       
+
+/*Estilos do Conteúdo Principal */
+
+.foto_principal {
+    height: auto; /* Altura automática para manter a proporção */
+    width: 100vw; /* Largura automática */
+    position: relative; /* Posição relativa para ajustes */
+    overflow: hidden; /* Esconde qualquer excesso */
+    max-width: 100%; /* Limite máximo para não desformatar */
+    margin: 30px 0 30px 0; /* Centraliza horizontalmente e espaça abaixo */
+}
+
+/* Estilos da Seção de Biografia e mapa */
+
+.biografia {
+    max-width: 800px; /* Largura máxima para melhor leitura */
+    padding: 20px; /* Espaçamento interno */
+    text-align: start; /* Alinha o texto à esquerda */
+    margin: 0 auto; /* Centraliza a seção na página */
+}
+.biografia h1 {
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do título */
+}
+.biografia p {
+    font-size: 1em; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+    color: #555; /* Cor dos parágrafos */
+}
+
+.biografia-mapa {
+    display: flex;
+    gap: 20px; /* Espaço entre texto e mapa */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Para responsividade em telas pequenas */
+}
+
+.biografia {
+    flex: 2 1 20px; /* Ocupa mais espaço que o mapa */
+    min-width: 250px;
+    padding-top: 0;
+}
+.biografia h1 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.mapa-widget {
+    flex: 1 1 300px; /* Ocupa menos espaço */
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.mapa-widget h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+footer {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    position: relative; /* Use 'fixed' se quiser sempre visível */
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
